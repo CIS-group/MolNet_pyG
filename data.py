@@ -16,7 +16,7 @@ from tqdm import tqdm
 
 class Parser(object):
     def __init__(self):
-        self.data = [mol for mol in Chem.SDMolSupplier("/home/duckling/projects/yeji/3DGCN_tf1/dataset/bace_cla.sdf")]
+        self.data = [mol for mol in Chem.SDMolSupplier(".data/bace_cla.sdf")]
         self.atom_type =  ['C', 'O', 'N', 'S', 'Cl', 'F', 'Br', 'P', 'I', 'Si', 'B', 'Na', 'Sn', 'Se', 'other']
 
     def parse_dataset(self):
